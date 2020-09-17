@@ -41,7 +41,7 @@ Cleaning:
 13	9000–9999 :  Province de Flandre-Orientale
 
 
-- Price/m3
+- create new column Price/m3
 ### Data Analysis
 
 
