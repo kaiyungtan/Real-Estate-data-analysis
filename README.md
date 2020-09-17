@@ -24,6 +24,7 @@ Cleaning:
 - Check each columns's properties
 - Include provinces
 - Include regions
+- Reset index
 
 1	1000–1299 : Région de Bruxelles-Capitale
 2	1300–1499 :  Province du Brabant wallon
