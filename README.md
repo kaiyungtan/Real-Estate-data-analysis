@@ -13,6 +13,33 @@ Use pandas, Data visualisation libraries(Matplotlib or Seaborn) to establish con
 3. Carefully remove the outliers (Weird, incorrect or absurd).
 4. Eventually: Add facilities data
 
+https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
+
+Cleaning:
+- Drop the duplicated rows
+- Check each columns's properties
+- Drop columns with unique value
+- Move columns (city_name)
+- Include provinces
+- Include regions
+
+1	1000–1299 : Région de Bruxelles-Capitale
+2	1300–1499 :  Province du Brabant wallon
+3	1500–1999 :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
+4	2000–2999 :  Province d'Anvers
+5	3000–3499 :  Province du Brabant flamand (arrondissement de Louvain, plus Overijse)
+6	3500–3999 :  Province de Limbourg
+7	4000–4999 :  Province de Liège
+8	5000–5999 : Province de Namur
+9	6000–6599 :  Province de Hainaut (1)
+10	6600–6999 :  Province de Luxembourg
+11	7000–7999 :  Province de Hainaut (2)
+12	8000–8999 :  Province de Flandre-Occidentale
+13	9000–9999 :  Province de Flandre-Orientale
+
+
+- Price/m3
 ### Data Analysis
+
 
 ### Data interpretation
