@@ -19,9 +19,9 @@ https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
 
 Cleaning:
 - Drop the duplicated rows
-- Check each columns's properties
-- Drop columns with unique value
 - Move columns (city_name)
+- Drop columns with unique value
+- Check each columns's properties
 - Include provinces
 - Include regions
 
