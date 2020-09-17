@@ -41,7 +41,7 @@ Cleaning:
 13	9000–9999 :  Province de Flandre-Orientale
 
 
-- create new column Price/m3
+- create new column Price/m3 (Creating this value now helps to drop columns that have missing m3 or price).
 ### Data Analysis
 
 
