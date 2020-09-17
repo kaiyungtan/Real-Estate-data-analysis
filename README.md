@@ -1,7 +1,7 @@
 # Challenge: Data Analysis
 Use pandas, Data visualisation libraries(Matplotlib or Seaborn) to establish conclusions about a dataset.
 
-## Team member: Kai Yung (Adam) / Mathieu / Joffrey 
+### Team member: Kai Yung (Adam) / Mathieu / Joffrey 
 
 ## Plan:
 
