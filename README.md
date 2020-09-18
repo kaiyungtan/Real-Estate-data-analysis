@@ -26,6 +26,16 @@ Cleaning:
 - Include regions
 - Reset index
 
+- subtype: supprimer appartement block, puis supprimer subtype
+- room number: delete +20
+- price: float ? -> to int
+- house surface : delete 1, 31700
+- terrace_area: delete
+- garden_area: delete
+- surface: garder et supprimer au moment du calcul
+- facade: remove 1
+- state of building: None to unknown
+
 1	1000–1299 : Région de Bruxelles-Capitale
 2	1300–1499 :  Province du Brabant wallon
 3	1500–1999 :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
