@@ -54,5 +54,17 @@ Cleaning:
 - create new column Price/m3 (Creating this value now helps to drop columns that have missing m3 or price).
 ### Data Analysis
 
+#### Which variable is the target ?
+The price.
+Why ? Our mission is to to create a machine learning model to predict prices on Belgium's sales.
+
+#### How many rows and columns ?
+We have 40395 rows (observations)
+And 18 columns
+
+Why: City Name, Lattitude, Longitude, Province, Region
+
+#### What is the correlation between variable/target ? (Why?)
+- 
 
 ### Data interpretation
