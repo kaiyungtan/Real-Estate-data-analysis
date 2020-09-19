@@ -79,7 +79,6 @@ And 18 columns
 Why: City Name, Lattitude, Longitude, Province, Region
 
 #### What is the correlation between variable/target ? (Why?)
-- 
 
 
 
