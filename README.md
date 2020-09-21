@@ -75,32 +75,29 @@ In this dataset we have **52077 rows** and **20 columns**.
 7. Data Interpretation (Adam,Joffery,Mathieu)
 8. Update repository (Adam,Joffery,Mathieu)
 
-## 1. Studying the request
+## 1. Request and technical challenge
 Our goal is to clean and do a complete analysis and interpretation of the dataset.
 
 ### Adding geographical data
 Based on the request, we decided to search for additional informations about the location of the dataframe's observations.
 
-**Why ?**
+#### Why ?
+1. These information could help us to create maps, and visualize the data geographically with [Folium](https://pypi.org/project/folium/)<br><img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> A much better way to understand the real estate situation in Belgium !
 
-These information could help us to create maps, and visualize the data geographically <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> A much better way to understand the real estate situation in Belgium !
+2. We used [Folium](https://pypi.org/project/folium/) because it allow to visualize data on a Leaflet map easily.<br><img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Folium is build on the data wrangling strengths of the Python ecosystem and the mapping strengths of the leaflet.js library. A very powerfull tool !
 
 #### Merging with a [Postal Codes dataset](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1):
-From the file *code-postaux-belge.csv*, which can be obtained from [this link](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1), we could retrieve the following informations:
+From the file *code-postaux-belge.csv*, which can be obtained from [this link](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1), we retrieved the following informations:
 
 * **column_1** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> postal_code *int*
 * **column_2** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> city_name *str*
 * **column_3** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> longitude *float*
 * **column_4** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> lattitude *float*
 
-'coordonnees': coordinate of the city (longtitude,lattitude) 
+We dropped the other columns of this dataset (to keep only 4), as they were useless.
 
-'geom' : empty column
-
-- code-postaux-belge.csv will be merge with dataset_house_apartment.csv to have the final raw dataset.
-- only column 1-4 from code-postaux-belge.csv will be merge.
-
-In addition, the team has to find out postal codes with their associated provinces and regions.
+#### Adding the Provinces and Regions
+We also needed to associate the postal code with their provinces and regions.
 
 ## 3. Technical challenges
 
