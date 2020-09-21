@@ -22,7 +22,7 @@ Mathieu https://github.com/leersmathieu
 
 ## The dataset: a 50.000 entries' one !
 
-To complete this challenge, we used **a Dataset of 50.000 observation**, previously scrapped by [Kay Yung]( https://github.com/kaiyungtan) and its team during a previous challenge.
+To complete this challenge, we used **a Dataset of 50.000 real estate's observations**, previously scrapped by [Kay Yung]( https://github.com/kaiyungtan) and its team during a previous challenge.
 
 To get geographical informations about our data, we merged this dataset with the [Postal Codes dataset from belgium.be](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1) and later, witht the [Belgium Municipalities GeoJSON](https://hub.arcgis.com/datasets/esribeluxdata::belgium-municipalities-1) provided by ArcGis.
 
