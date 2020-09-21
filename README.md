@@ -75,7 +75,7 @@ In this dataset we have **52077 rows** and **20 columns**.
 7. Data Interpretation (Adam,Joffery,Mathieu)
 8. Update repository (Adam,Joffery,Mathieu)
 
-## 1. Request and technical challenge
+## 1. Request & technical challenge
 Our goal is to clean and do a complete analysis and interpretation of the dataset.
 
 ### Adding geographical data
@@ -97,18 +97,86 @@ From the file *code-postaux-belge.csv*, which can be obtained from [this link](h
 We dropped the other columns of this dataset (to keep only 4), as they were useless.
 
 #### Adding the Provinces and Regions
-We also needed to associate the postal code with their provinces and regions.
+We also needed to associate the postal code with their provinces and regions. They were no dataset with these informations. So we created it from [this wikipedia page](https://fr.wikipedia.org/wiki/Provinces_de_Belgique).
 
-## 3. Technical challenges
+A function "*convert_by_postal_code()*" was created to map related postal code to their associated provinces and regions. You can see it in the [Step 1-Cleaning notebook](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step1_cleaning.ipynb) or below:
 
-To find all postal codes with their associated provinces and regions:
+<details>
+  <summary>Expand this function</summary>
+ 
+```Python
 
- - A function convert_by_postal_code() created to map related postal code to their associated provinces and regions. (credit to Joffrey)
+provinces = {
+    'Bruxelles-Capitale': {
+        'range': [(1000, 1299)],
+        'region': 'Bruxelles'
+    },
+    'Brabant wallon': {
+        'range': [(1300, 1499)],
+        'region': 'Wallonie'
+    },
+    'Brabant flamand': {
+        'range': [(1500, 1999), (3000, 3499)],
+        'region': 'Flandre'
+    },
+    'Anvers': {
+        'range': [(2000, 2999)],
+        'region': 'Flandre'
+    },
+    'Limbourg': {
+        'range': [(3500, 3999)],
+        'region': 'Flandre'
+    },
+    'Liège': {
+        'range': [(4000, 4999)],
+        'region': 'Wallonie'
+    },
+    'Namur': {
+        'range': [(5000, 5999)],
+        'region': 'Wallonie'
+    },
+    'Hainaut': {
+        'range': [(6000, 6599), (7000, 7999)],
+        'region': 'Wallonie'
+    },
+    'Luxembourg': {
+        'range': [(6600, 6999)],
+        'region': 'Wallonie'
+    },
+    'Flandre-Occidentale': {
+        'range': [(8000, 8999)],
+        'region': 'Flandre'
+    },
+    'Flandre-Orientale': {
+        'range': [(9000, 9999)],
+        'region': 'Flandre'
+    }
+}
 
-To create maps with interesting information:
+def convert_by_postal_code():
+  """
+  Convert the 'provinces' dictionnary to a dictionnary of postal codes as key,
+  and its region and province as values.
+  """
+  postal_dict = {}
 
- - Visualize data on a Leaflet map via folium.
- - Folium builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the leaflet.js library. 
+  # Loop through each entry in the "provinces" dictionnary
+  for province, content in provinces.items():
+
+    # Loop though each postal code
+    for postal_code_tuple in content['range']:
+      for code in range(postal_code_tuple[0], postal_code_tuple[1] + 1):
+
+        # Append the province and region for each postal code.
+        postal_dict[code] = {'province': province, 'region': content['region']}
+
+  return postal_dict
+
+postal_dict = convert_by_postal_code()
+
+# Then, the result is merged with our dataframe.
+```
+</details>
 
 #### Postal codes correspondence to Region/Province
 
