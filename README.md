@@ -3,12 +3,22 @@ Using pandas and data visualisation libraries (Matplotlib, Seaborn), let's estab
 
 ### Team member:  
 
+<table style="width: 100%;" >
+<tbody>
+<tr>
+<td style="border: 1px solid #ffffff00" width="70%">
 Kai Yung (Adam) <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/kaiyungtan<br>
 Joffrey Bienvenu <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/Joffreybvn<br>
 Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/leersmathieu
+</td>
+<td>
+<img class="fit-picture"src="https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true">
+</td>
+</tr>
+</tbody>
+</table>
 
-
-![alt text](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true)
+[![https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/map_pricem2.png](https://github.com/kaiyungtan/challenge-data-analysis/raw/master/Visualisation/map_pricem2.png)](https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/map_pricem2.html)
 
 ## Challenge's summary
 **The mission is**: Cleaning and doing a complete analysis and interpretation of the dataset created during the previous challenge. In order to create a machine learning model to predict prices on Belgium's real estate's sales.
@@ -233,16 +243,17 @@ To get the most out of our data, and to allow each of us to get experience manip
 ### Our target: The Price.
 The price is obviously the target of this challenge, as ou goal is to to create a machine learning model to predict prices on Belgium's sales.
 
-#### Correlation between variables ?
+### Correlation between variables ?
 To identify the correlation, we used this heatmap:
 
 ![https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png)
 
-##### Observations:
+#### Observations:
 1. The **Price** is mainly correlated with the *Number of rooms* and the *House area*.
 2. The **Number of rooms** and *House area* seems mainly correlated with each other.
 3. The **Type of property** is the variables which has the most correlation with other variables.
 
+### Price map
 
 
 Based on theses observations, we investigated the correlations between them.
