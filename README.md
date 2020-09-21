@@ -208,48 +208,44 @@ To proceed to the analysis, we needed a clean dataset containing at least:
   - A price/m2 column
   
 ### Removing the outliers (error, incorrect or absurd).
-It's good to have a lot of columns, as it can create more correlations between them. However, it's bad to have columns with errors, incorrect, missing or absurd values.
-
-We divided our cleaning in two phases:
+It's good to have a lot of columns, as it can create more correlations between them. However, it's bad to have columns with errors, incorrect, missing or absurd values. That's why **we divided our cleaning in two phases**:
 
 #### Cleaning the raw:
 A very first clean to the raw data. We were focused on "**dropping the big lies**":
 
-- Dropping the duplicated rows
-- Droping columns with unique value
-- Check each columns's properties
+- **Dropping** the duplicated rows
+- **Droping** columns with unique value
+- **Checking** each columns's properties
 
 #### Refining the values
 Some tweaks were made on the dataset to **remove outliers and useless columns**, due to their high rate of *None* value. This steap required deeper investigation intop the data:
 
-- Dropping "*terrace_area*" column
-- Dropping "*garden_area*" column
-- Dropping "*subtype*" column
-- Removing the "Apartment blocks" entries
-- Changing *None* to "unknow"
+- **Dropping** "*terrace_area*" column
+- **Dropping** "*garden_area*" column
+- **Dropping** "*subtype*" column
+- **Removing** the "Apartment blocks" entries
+- **Changing** *None* to "unknow"
 
 We also refactored all *float* to *int*. At the end of the cleaning, **we merged our dataframe with the two other ones created during the request study**.
 
-
-## 5. Data Visualisation
-
-
-## 6. Data Analysis
-
-#### Which variable is the target ?
-The price.
-Why ? Our mission is to to create a machine learning model to predict prices on Belgium's sales.
-
 #### How many rows and columns ?
-We have 40395 rows (observations)
-And 18 columns
+At the end of the cleaning phase, we had **40.395 rows** (observations) and **18 columns**. We also made a [Pandas Profiling Report](https://kaiyungtan.github.io/challenge-data-analysis/data/clean/report.html) to prove the clea
 
-Why: City Name, Lattitude, Longitude, Province, Region
+
+## 5. Data Analysis & Interpretation
+This is where the fun start ! :partying_face: 
+
+> Two people know more than one.
+
+To get the most out of our data, and to allow each of us to get experience manipulating Pandas and Seaborn, we decided to work separately. Later we reviewed our work and merged here the results.
+
+### Our target: The Price.
+The price is obviously the target of this challenge, as ou goal is to to create a machine learning model to predict prices on Belgium's sales.
 
 #### What is the correlation between variable/target ? (Why?)
+To identify the correlation, we used this heatmap:
 
-
-
+![https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png)
 
 ## 7. Data Interpretation 
 
