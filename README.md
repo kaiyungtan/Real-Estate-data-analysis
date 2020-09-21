@@ -6,7 +6,7 @@ Using pandas and data visualisation libraries (Matplotlib, Seaborn), let's estab
 <table style="width: 100%;" >
 <tbody>
 <tr>
-<td style="border: 1px solid #ffffff00" width="70%">
+<td style="border: 1px solid #ffffff00" width="80%">
 Kai Yung (Adam) <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/kaiyungtan<br>
 Joffrey Bienvenu <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/Joffreybvn<br>
 Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/leersmathieu
