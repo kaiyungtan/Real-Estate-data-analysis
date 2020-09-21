@@ -78,8 +78,6 @@ You can download the raw CSV directly [from this link](https://github.com/kaiyun
 </details>
 
 ---
-![https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/belgium.png](https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/belgium.png)
----
 
 # The Challenge
 
