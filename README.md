@@ -6,7 +6,7 @@ Using pandas and data visualisation libraries (Matplotlib, Seaborn), let's estab
 <table style="width: 100%;" >
 <tbody>
 <tr>
-<td style="border: 1px solid #ffffff00" width="100%">
+<td style="border: 1px solid #ffffff00" width="90%">
 Kai Yung (Adam) <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/kaiyungtan<br>
 Joffrey Bienvenu <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/Joffreybvn<br>
 Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/leersmathieu
@@ -18,7 +18,8 @@ Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-c
 </tbody>
 </table>
 
-**Click on the map** to enlarge
+### Price/m2 Map:
+Here is a quick introduction to our work: A map of all belgian's municipalities with their median price/m2.
 [![https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/map_pricem2.png](https://github.com/kaiyungtan/challenge-data-analysis/raw/master/Visualisation/map_pricem2.png)](https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/map_pricem2.html)
 
 ## Challenge's summary
