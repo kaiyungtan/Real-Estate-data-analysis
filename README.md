@@ -111,6 +111,7 @@ For both houses & apartments in Belgium:
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house&apartment.html
 
 For apartments in Belgium:
+
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_apartment.html
 
 For houses in Belgium:
