@@ -98,3 +98,20 @@ Why: City Name, Lattitude, Longitude, Province, Region
 #### What are the less expensive municipalities in Wallonia? (Average price, median price, price per square meter)
 
 #### What are the less expensive municipalities in Flanders? (Average price, median price, price per square meter)
+
+
+## Pandas profiling report:
+
+https://kaiyungtan.github.io/challenge-data-analysis/data/clean/report.html
+
+## Average Price per Square Meter map:
+
+For both houses & apartments in Belgium:
+
+https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house&apartment.html
+
+For apartments in Belgium:
+https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_apartment.html
+
+For houses in Belgium:
+https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house.html
