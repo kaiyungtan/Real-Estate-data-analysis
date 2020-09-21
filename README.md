@@ -14,9 +14,11 @@ Mathieu https://github.com/leersmathieu
 
 ## Introduction
 
+The real estate company "ImmoEliza" wants you to create a machine learning model to predict prices on Belgium's sales.
 
+You need to do a complete analysis and interpretation of the dataset.
 
-
+Dataset were scrapped from https://www.immoweb.be
 
 ## Plan:
 
