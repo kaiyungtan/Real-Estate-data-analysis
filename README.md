@@ -64,13 +64,60 @@ https://github.com/kaiyungtan/challenge-data-analysis/
 
 ### 2. Request
 
-Based on the request
+Based on the request, the team decided to search for additional information related to postal code i.e name of the city,province ...
+
+From code-postaux-belge.csv which can be obtained from https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
+
+We have information as follow:
+
+'column_1': postal code
+
+'column_2': city name 
+
+'column_3': longitude
+
+'column_4': lattitude	
+
+'coordonnees': coordinate of the city (longtitude,lattitude) 
+
+'geom' : empty column
 
 
-To 
-From https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
-code-postaux-belge.csv
-(2757, 6)
+### 3. Technical challenges
+
+In order to build find all postal codes, and their associated provinces and regions. 
+
+A function convert_by_postal_code() created to map related postal code to their associated provinces and regions. (credit to Joffrey)
+ 
+ 
+#### Postal codes correspondence to Region/Province
+
+1000–1299 : Région de Bruxelles-Capitale
+
+1300–1499 :  Province du Brabant wallon
+
+1500–1999 :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
+
+2000–2999 :  Province d'Anvers
+
+3000–3499 :  Province du Brabant flamand (arrondissement de Louvain, plus Overijse)
+
+3500–3999 :  Province de Limbourg
+
+4000–4999 :  Province de Liège
+
+5000–5999 : Province de Namur
+
+6000–6599 :  Province de Hainaut (1)
+
+6600–6999 :  Province de Luxembourg
+
+7000–7999 :  Province de Hainaut (2)
+
+8000–8999 :  Province de Flandre-Occidentale
+
+9000–9999 :  Province de Flandre-Orientale
+
 
 
 ### 4. Data Cleaning
@@ -104,37 +151,11 @@ Cleaning:
 - facade: remove 1
 - state of building: None to unknown
 
-Postal codes correspondence to Region/Province
-
-1000–1299 : Région de Bruxelles-Capitale
-
-1300–1499 :  Province du Brabant wallon
-
-1500–1999 :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
-
-2000–2999 :  Province d'Anvers
-
-3000–3499 :  Province du Brabant flamand (arrondissement de Louvain, plus Overijse)
-
-3500–3999 :  Province de Limbourg
-
-4000–4999 :  Province de Liège
-
-5000–5999 : Province de Namur
-
-6000–6599 :  Province de Hainaut (1)
-
-6600–6999 :  Province de Luxembourg
-
-7000–7999 :  Province de Hainaut (2)
-
-8000–8999 :  Province de Flandre-Occidentale
-
-9000–9999 :  Province de Flandre-Orientale
 
 
+### 5. Data Visualisation
 
-## 5. Data Analysis
+## 6. Data Analysis
 
 #### Which variable is the target ?
 The price.
@@ -151,7 +172,7 @@ Why: City Name, Lattitude, Longitude, Province, Region
 
 
 
-## 6. Data Interpretation 
+## 7. Data Interpretation 
 
 - to create new column price/house area to answer price per square meter for the following questions.
 
