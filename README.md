@@ -19,7 +19,7 @@ Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-c
 </table>
 
 ### Price/m2 Map:
-Here is a quick introduction to our work: A map of all belgian's municipalities with their median price/m2.
+Here is a quick introduction to our work: A map of all belgian's municipalities with their median price/m2. **Click to enlarge**
 [![https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/map_pricem2.png](https://github.com/kaiyungtan/challenge-data-analysis/raw/master/Visualisation/map_pricem2.png)](https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/map_pricem2.html)
 
 ## Challenge's summary
@@ -48,6 +48,8 @@ We choose to use this dataset because:
 In this dataset we have **52077 rows** and **20 columns**.
 
 ### CSV architecture
+
+You can download the raw CSV directly [from this link](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/data/raw/dataset_house_apartment.csv).
 
 <details>
   <summary>Show the CSV architecture</summary>
