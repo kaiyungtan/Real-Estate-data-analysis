@@ -213,6 +213,42 @@ Why: City Name, Lattitude, Longitude, Province, Region
 #### What are the less expensive municipalities in Flanders? (Average price, median price, price per square meter)
 
 
+#### The most & less expensive municipalities for apartments:
+
+| Brussels | Average price  | median | price/sqm |
+|--------|--------|-------|-------|
+| Auderghem | 429326 | 392500 | 4191 |
+| Molenbeek-Saint-Jean| 234724| 219000  | 2288 |
+ 
+| Wallonie | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| La Hulpe | 346000 | 332500 | 3898|
+| Villers-Sur-Semois | 14500| 14500  | 517 |
+ 
+| Flanders | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| Knokke | 550494 | 515000 |  6363 |
+| Kermt | 229500 | 229500 | 1213 |
+
+#### The most & less expensive municipalities for houses:
+
+| Brussels | Average price  | median | price/sqm |
+|--------|--------|-------|-------|
+| Watermael-Boitsfort | 637965 | 595000 | 3426 |
+| Koekelberg | 377500 | 330000 | 1725 |
+ 
+| Wallonie | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| Louvain-La-Neuve | 595200 | 580000 |  3159|
+| Beauwelz | 70000 | 70000  | 350 |
+ 
+| Flanders | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| Boutersem | 443245 | 360000 |  3750 |
+| Bossuit | 220000 | 220000 | 698 |
+
+
+
 ## Pandas profiling report:
 
 https://kaiyungtan.github.io/challenge-data-analysis/data/clean/report.html
