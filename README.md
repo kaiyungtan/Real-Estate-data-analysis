@@ -67,8 +67,7 @@ In this dataset we have **52077 rows** and **20 columns**.
 
 ## Plan:
 
-2. Study the request (Adam,Joffery,Mathieu)
-3. Identify technical challenges (Adam,Joffery,Mathieu)
+1. Request & technical challenge
 4. Data Cleaning (Adam,Joffery,Mathieu)
 5. Data Visualisation (Adam,Joffery,Mathieu)
 6. Data Analysis (Adam,Joffery,Mathieu)
@@ -76,7 +75,7 @@ In this dataset we have **52077 rows** and **20 columns**.
 8. Update repository (Adam,Joffery,Mathieu)
 
 ## 1. Request & technical challenge
-Our goal is to clean and do a complete analysis and interpretation of the dataset.
+Our goal is to clean and do a complete analysis and interpretation of the dataset. As we are manipulating real estate data, we decided to add geographical data to our dataset.
 
 ### Adding geographical data
 Based on the request, we decided to search for additional informations about the location of the dataframe's observations.
@@ -98,6 +97,25 @@ We dropped the other columns of this dataset (to keep only 4), as they were usel
 
 #### Adding the Provinces and Regions
 We also needed to associate the postal code with their provinces and regions. They were no dataset with these informations. So we created it from [this wikipedia page](https://fr.wikipedia.org/wiki/Provinces_de_Belgique).
+
+<details>
+  <summary>Postal codes correspondence to Region/Province</summary>
+
+
+* **1000–1299** :  Région de Bruxelles-Capitale
+* **1300–1499** :  Province du Brabant wallon
+* **1500–1999** :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
+* **2000–2999** :  Province d'Anvers
+* **3000–3499** :  Province du Brabant flamand (arrondissement de Louvain, plus Overijse)
+* **3500–3999** :  Province de Limbourg
+* **4000–4999** :  Province de Liège
+* **5000–5999** :  Province de Namur
+* **6000–6599** :  Province de Hainaut (1)
+* **6600–6999** :  Province de Luxembourg
+* **7000–7999** :  Province de Hainaut (2)
+* **8000–8999** :  Province de Flandre-Occidentale
+* **9000–9999** :  Province de Flandre-Orientale
+</details>
 
 A function "*convert_by_postal_code()*" was created to map related postal code to their associated provinces and regions. You can see it in the [Step 1-Cleaning notebook](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step1_cleaning.ipynb) or below:
 
@@ -175,70 +193,42 @@ def convert_by_postal_code():
 postal_dict = convert_by_postal_code()
 
 # Then, the result is merged with our dataframe.
+# Get the details on: https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step1_cleaning.ipynb
 ```
 </details>
 
-#### Postal codes correspondence to Region/Province
 
-1000–1299 : Région de Bruxelles-Capitale
+## 2. Data Cleaning
+The cleaning phase is very important: without a good cleaning, our analysis could be badly influenced by outliers. So, we decided to identify our neer during the analysis phase, to drop the useless column and clean the usefull ones.
 
-1300–1499 :  Province du Brabant wallon
+### Identifing the needs:
+To proceed to the analysis, we needed a clean dataset containing at least:
 
-1500–1999 :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
-
-2000–2999 :  Province d'Anvers
-
-3000–3499 :  Province du Brabant flamand (arrondissement de Louvain, plus Overijse)
-
-3500–3999 :  Province de Limbourg
-
-4000–4999 :  Province de Liège
-
-5000–5999 : Province de Namur
-
-6000–6599 :  Province de Hainaut (1)
-
-6600–6999 :  Province de Luxembourg
-
-7000–7999 :  Province de Hainaut (2)
-
-8000–8999 :  Province de Flandre-Occidentale
-
-9000–9999 :  Province de Flandre-Orientale
-
-## 4. Data Cleaning
-
-1. Understand the requirements.
-
-2. Identify the needs:
-
-  - Dataset with postal code and cities.
-  - Research on data visualization library.
-  - A new price/m3 column.
-  - Average, median price, and per m3.
+  - Prices, postal code and city names.
+  - A price/m2 column
   
-3. Carefully remove the outliers (error, incorrect or absurd).
- 
+### Removing the outliers (error, incorrect or absurd).
+It's good to have a lot of columns, as it can create more correlations between them. However, it's bad to have columns with errors, incorrect, missing or absurd values.
 
-Cleaning:
-- Drop the duplicated rows
-- Move columns (city_name)
-- Drop columns with unique value
+We divided our cleaning in two phases:
+
+#### Cleaning the raw:
+A very first clean to the raw data. We were focused on "**dropping the big lies**":
+
+- Dropping the duplicated rows
+- Droping columns with unique value
 - Check each columns's properties
-- Include provinces
-- Include regions
-- Reset index
 
-- subtype: supprimer appartement block, puis supprimer subtype
-- room number: delete +20
-- price: float ? -> to int
-- house surface : delete 1, 31700
-- terrace_area: delete
-- garden_area: delete
-- surface: garder et supprimer au moment du calcul
-- facade: remove 1
-- state of building: None to unknown
+#### Refining the values
+Some tweaks were made on the dataset to **remove outliers and useless columns**, due to their high rate of *None* value. This steap required deeper investigation intop the data:
 
+- Dropping "*terrace_area*" column
+- Dropping "*garden_area*" column
+- Dropping "*subtype*" column
+- Removing the "Apartment blocks" entries
+- Changing *None* to "unknow"
+
+We also refactored all *float* to *int*. At the end of the cleaning, **we merged our dataframe with the two other ones created during the request study**.
 
 
 ## 5. Data Visualisation
