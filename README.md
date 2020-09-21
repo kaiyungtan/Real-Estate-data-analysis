@@ -77,6 +77,8 @@ You can download the raw CSV directly [from this link](https://github.com/kaiyun
   
 </details>
 
+---
+
 # The Challenge
 
 ## 1. Request study & technical challenge
