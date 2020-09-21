@@ -1,13 +1,11 @@
 # Challenge: Data Analysis
-Use pandas, Data visualisation libraries(Matplotlib or Seaborn) to establish conclusions about a dataset.
+Using pandas and data visualisation libraries (Matplotlib, Seaborn), let's establish conclusions about a dataset.
 
 ### Team member:  
 
-Kai Yung (Adam) https://github.com/kaiyungtan
-
-Joffrey https://github.com/Joffreybvn
-
-Mathieu https://github.com/leersmathieu
+Kai Yung (Adam) <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/kaiyungtan<br>
+Joffrey Bienvenu <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/Joffreybvn<br>
+Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/leersmathieu
 
 
 ![alt text](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true)
@@ -65,16 +63,9 @@ In this dataset we have **52077 rows** and **20 columns**.
   
 </details>
 
-## Plan:
+# The Challenge
 
-1. Request & technical challenge
-4. Data Cleaning (Adam,Joffery,Mathieu)
-5. Data Visualisation (Adam,Joffery,Mathieu)
-6. Data Analysis (Adam,Joffery,Mathieu)
-7. Data Interpretation (Adam,Joffery,Mathieu)
-8. Update repository (Adam,Joffery,Mathieu)
-
-## 1. Request & technical challenge
+## 1. Request study & technical challenge
 Our goal is to clean and do a complete analysis and interpretation of the dataset. As we are manipulating real estate data, we decided to add geographical data to our dataset.
 
 ### Adding geographical data
@@ -85,7 +76,7 @@ Based on the request, we decided to search for additional informations about the
 
 2. We used [Folium](https://pypi.org/project/folium/) because it allow to visualize data on a Leaflet map easily.<br><img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Folium is build on the data wrangling strengths of the Python ecosystem and the mapping strengths of the leaflet.js library. A very powerfull tool !
 
-#### Merging with a [Postal Codes dataset](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1):
+### Merging with a [Postal Codes dataset](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1):
 From the file *code-postaux-belge.csv*, which can be obtained from [this link](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1), we retrieved the following informations:
 
 * **column_1** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> postal_code *int*
@@ -95,7 +86,7 @@ From the file *code-postaux-belge.csv*, which can be obtained from [this link](h
 
 We dropped the other columns of this dataset (to keep only 4), as they were useless.
 
-#### Adding the Provinces and Regions
+### Adding the Provinces and Regions
 We also needed to associate the postal code with their provinces and regions. They were no dataset with these informations. So we created it from [this wikipedia page](https://fr.wikipedia.org/wiki/Provinces_de_Belgique).
 
 <details>
@@ -228,11 +219,11 @@ Some tweaks were made on the dataset to **remove outliers and useless columns**,
 
 We also refactored all *float* to *int*. At the end of the cleaning, **we merged our dataframe with the two other ones created during the request study**.
 
-#### How many rows and columns ?
+### How many rows and columns ?
 At the end of the cleaning phase, we had **40.395 rows** (observations) and **18 columns**. We also made a [Pandas Profiling Report](https://kaiyungtan.github.io/challenge-data-analysis/data/clean/report.html) to prove the clea
 
 
-## 5. Data Analysis & Interpretation
+## 3. Data Analysis & Interpretation
 This is where the fun start ! :partying_face: 
 
 > Two people know more than one.
@@ -242,11 +233,19 @@ To get the most out of our data, and to allow each of us to get experience manip
 ### Our target: The Price.
 The price is obviously the target of this challenge, as ou goal is to to create a machine learning model to predict prices on Belgium's sales.
 
-#### What is the correlation between variable/target ? (Why?)
+#### Correlation between variables ?
 To identify the correlation, we used this heatmap:
 
 ![https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png)
 
+##### Observations:
+1. The **Price** is mainly correlated with the *Number of rooms* and the *House area*.
+2. The **Number of rooms** and *House area* seems mainly correlated with each other.
+3. The **Type of property** is the variables which has the most correlation with other variables.
+
+
+
+Based on theses observations, we investigated the correlations between them.
 ## 7. Data Interpretation 
 
 - to create new column price/house area to answer price per square meter for the following questions.
