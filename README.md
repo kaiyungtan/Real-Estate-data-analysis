@@ -82,14 +82,22 @@ We have information as follow:
 
 'geom' : empty column
 
+- code-postaux-belge.csv will be merge with dataset_house_apartment.csv to have the final raw dataset.
+- only column 1-4 from code-postaux-belge.csv will be merge.
+
+In addition, the team has to find out postal codes with their associated provinces and regions.
 
 ## 3. Technical challenges
 
-In order to build find all postal codes, and their associated provinces and regions. 
+To find all postal codes with their associated provinces and regions:
 
-A function convert_by_postal_code() created to map related postal code to their associated provinces and regions. (credit to Joffrey)
- 
- 
+ - A function convert_by_postal_code() created to map related postal code to their associated provinces and regions. (credit to Joffrey)
+
+To create maps with interesting information:
+
+ - Visualize data on a Leaflet map via folium.
+ - Folium builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the leaflet.js library. 
+
 #### Postal codes correspondence to Region/Province
 
 1000–1299 : Région de Bruxelles-Capitale
@@ -118,15 +126,17 @@ A function convert_by_postal_code() created to map related postal code to their 
 
 9000–9999 :  Province de Flandre-Orientale
 
-
-
 ## 4. Data Cleaning
+
 1. Understand the requirements.
+
 2. Identify the needs:
+
   - Dataset with postal code and cities.
   - Research on data visualization library.
   - A new price/m3 column.
   - Average, median price, and per m3.
+  
 3. Carefully remove the outliers (error, incorrect or absurd).
  
 
@@ -152,6 +162,7 @@ Cleaning:
 
 
 ## 5. Data Visualisation
+
 
 ## 6. Data Analysis
 
