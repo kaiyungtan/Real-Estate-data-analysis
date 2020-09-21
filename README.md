@@ -12,17 +12,30 @@ Mathieu https://github.com/leersmathieu
 
 ![alt text](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true)
 
-## Introduction
+## Challenge's summary
+**The mission is**: Cleaning and doing a complete analysis and interpretation of the dataset created during the previous challenge. In order to create a machine learning model to predict prices on Belgium's real estate's sales.
 
-The real estate company "ImmoEliza" wants you to create a machine learning model to predict prices on Belgium's sales.
+### Objectives:
+ - Using Pandas for data manipulation.
+ - Using MatplotLib and/or Seaborn for plotting.
+ - Finding and understanding correlations bewteen dataset's variables.
 
-You need to do a complete analysis and interpretation of the dataset.
+## The dataset: a 50.000 entries' one !
 
-Dataset were scrapped from https://www.immoweb.be
+To complete this challenge, we used **a Dataset of 50.000 observation**, previously scrapped by [Kay Yung]( https://github.com/kaiyungtan) and its team during a previous challenge.
 
-Raw dataset : dataset_house_apartment.csv were obtained https://github.com/MDropsy/challenge-collecting-data
+To get geographical informations about our data, we merged this dataset with the [Postal Codes dataset from belgium.be](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1) and later, witht the [Belgium Municipalities GeoJSON](https://hub.arcgis.com/datasets/esribeluxdata::belgium-municipalities-1) provided by ArcGis.
 
-In this dataset we have 52077 rows and 20 columns.
+### Why this dataset ?
+We choose to use this dataset because:
+
+*   **It has a lot of entries**: And they are not totally clean ! One of the key exercice of this challenge, was to be able to work with uncomplete/corrupted data. And at the same time, having the maximum amount of data to discover interesting correlations, and have a meaningfull analyse.
+
+*   **It was scrapped from ImmoWeb**: [Immoweb](https://www.immoweb.be/fr) is probably the biggest real estate website of Belgium. It has more detailed data than [Zimmo](https://www.zimmo.be/fr/), for example.
+
+*   **It was scrapped by colleagues**: The dataset "*dataset_house_apartment.csv*" was scrapped by a Becode colleague and can be found on [this repository](https://github.com/MDropsy/challenge-collecting-data).
+
+In this dataset we have **52077 rows** and **20 columns**.
 
 ### Details of the columns
 
