@@ -20,6 +20,37 @@ You need to do a complete analysis and interpretation of the dataset.
 
 Dataset were scrapped from https://www.immoweb.be
 
+Raw dataset : dataset_house_apartment.csv were obtained from challenge_collecting_data project (credit to https://github.com/MDropsy/challenge-collecting-data)
+
+In this dataset we have 52077 rows and 20 columns.
+
+### Details of the columns
+
+- locality (postal code of city)
+- type_of_property (House/apartment)
+- subtype_of_property (Bungalow, Chalet, Mansion, ...)
+- price (€)
+- type_of_sale (Exclusion of life sales)
+- number_of_rooms
+- house_area
+- fully_equipped_kitchen (Yes/No)
+- furnished (Yes/No)
+- open_fire (Yes/No)
+- terrace (Yes/No) 
+- terrace_area (m2)
+- garden (Yes/No)
+- garden_area (m2)
+- surface_of_the_land (m2)
+- surface_of_the_plot_of_land (m2)
+- number_of_facadess
+- swimming_pool (Yes/No)
+- state_of_the_building (New, to be renovated, ...)
+- construction_year (year of the property built)
+
+
+code-postaux-belge.csv
+(2757, 6)
+
 ## Plan:
 
 ### Data Cleaning
