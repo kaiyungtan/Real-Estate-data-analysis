@@ -128,9 +128,7 @@ A function convert_by_postal_code() created to map related postal code to their 
   - A new price/m3 column.
   - Average, median price, and per m3.
 3. Carefully remove the outliers (error, incorrect or absurd).
-4. Eventually: Add facilities data
-
-https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
+ 
 
 Cleaning:
 - Drop the duplicated rows
