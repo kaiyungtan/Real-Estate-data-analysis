@@ -1,13 +1,14 @@
 # Challenge: Data Analysis
 Use pandas, Data visualisation libraries(Matplotlib or Seaborn) to establish conclusions about a dataset.
 
-### Team member: Kai Yung (Adam) / Mathieu / Joffrey 
+### Team member:  
 
-| Team  | 
-|--------| 
-|Adam |  
-| Mathieu |  
-| Joffrey  |  
+Kai Yung (Adam) https://github.com/kaiyungtan
+
+Joffrey https://github.com/Joffreybvn
+
+Mathieu https://github.com/leersmathieu
+
 
 ![alt text](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true)
 
