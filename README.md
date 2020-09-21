@@ -58,11 +58,11 @@ In this dataset we have 52077 rows and 20 columns.
 7. Data Interpretation (Adam,Joffery,Mathieu)
 8. Update repository (Adam,Joffery,Mathieu)
 
-### 1. Repository 
+## 1. Repository 
 
 https://github.com/kaiyungtan/challenge-data-analysis/
 
-### 2. Request
+## 2. Request
 
 Based on the request, the team decided to search for additional information related to postal code i.e name of the city,province ...
 
@@ -83,7 +83,7 @@ We have information as follow:
 'geom' : empty column
 
 
-### 3. Technical challenges
+## 3. Technical challenges
 
 In order to build find all postal codes, and their associated provinces and regions. 
 
@@ -120,7 +120,7 @@ A function convert_by_postal_code() created to map related postal code to their 
 
 
 
-### 4. Data Cleaning
+## 4. Data Cleaning
 1. Understand the requirements.
 2. Identify the needs:
   - Dataset with postal code and cities.
@@ -153,7 +153,7 @@ Cleaning:
 
 
 
-### 5. Data Visualisation
+## 5. Data Visualisation
 
 ## 6. Data Analysis
 
