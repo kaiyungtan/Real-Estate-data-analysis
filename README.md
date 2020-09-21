@@ -37,28 +37,33 @@ We choose to use this dataset because:
 
 In this dataset we have **52077 rows** and **20 columns**.
 
-### Details of the columns
+### CSV architecture
 
-- locality (postal code of city)
-- type_of_property (House/apartment)
-- subtype_of_property (Bungalow, Villa, ...)
-- price (€)
-- type_of_sale (Exclusion of life sales)
-- number_of_rooms (number)
-- house_area (m2)
-- fully_equipped_kitchen (Yes/No)
-- furnished (Yes/No)
-- open_fire (Yes/No)
-- terrace (Yes/No) 
-- terrace_area (m2)
-- garden (Yes/No)
-- garden_area (m2)
-- surface_of_the_land (m2)
-- surface_of_the_plot_of_land (m2)
-- number_of_facadess (number)
-- swimming_pool (Yes/No)
-- state_of_the_building (Good, As new,to be renovated, ...)
-- construction_year (year of the property built)
+<details>
+  <summary>Show the CSV architecture</summary>
+ 
+- **locality** *str*: Postal code of city.
+- **type_of_property** *str*: House or Apartment.
+- **subtype_of_property** *str*: Bungalow, Villa, ...
+- **price** *float*: Price (€) of the property.
+- **type_of_sale** *str* The type of sale.
+- **number_of_rooms** *int*: The number of rooms of the property.
+- **house_area** *int*: The area (m2) of the house (floors).
+- **fully_equipped_kitchen** *bool*: If the house has a fully equipped kitchen or not.
+- **furnished** *bool*: If the house is furnished or not.
+- **open_fire***bool*: If there's an open fire or not.
+- **terrace** *bool*: If there's a terrace or not.
+- **terrace_area** *float*: The area (m2) of the terrace.
+- **garden** *bool*: If there's a garden or not.
+- **garden_area** *float*: The area (m2) of the garden.
+- **surface_of_the_land** *float*: The area (m2) of the land.
+- **surface_of_the_plot_of_land** *float*: The area (m2) of the land's plot.
+- **number_of_facadess** *int*: The number of facades (0 to 4).
+- **swimming_pool** *bool*: If there's a swimming pool or not.
+- **state_of_the_building** *str*: Good, As new, To be renovated, ...
+- **construction_year** *int*: The property built's year.
+  
+</details>
 
 ## Plan:
 
