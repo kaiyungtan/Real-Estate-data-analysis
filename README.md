@@ -20,9 +20,7 @@ You need to do a complete analysis and interpretation of the dataset.
 
 Dataset were scrapped from https://www.immoweb.be
 
-Raw dataset : dataset_house_apartment.csv were obtained from challenge_collecting_data project 
-
-(credit to https://github.com/MDropsy/challenge-collecting-data)
+Raw dataset : dataset_house_apartment.csv were obtained https://github.com/MDropsy/challenge-collecting-data
 
 In this dataset we have 52077 rows and 20 columns.
 
