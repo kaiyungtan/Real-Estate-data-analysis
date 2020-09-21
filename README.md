@@ -67,7 +67,6 @@ In this dataset we have **52077 rows** and **20 columns**.
 
 ## Plan:
 
-1. Create the repository (Adam)
 2. Study the request (Adam,Joffery,Mathieu)
 3. Identify technical challenges (Adam,Joffery,Mathieu)
 4. Data Cleaning (Adam,Joffery,Mathieu)
@@ -76,25 +75,23 @@ In this dataset we have **52077 rows** and **20 columns**.
 7. Data Interpretation (Adam,Joffery,Mathieu)
 8. Update repository (Adam,Joffery,Mathieu)
 
-## 1. Repository 
+## 1. Studying the request
+Our goal is to clean and do a complete analysis and interpretation of the dataset.
 
-https://github.com/kaiyungtan/challenge-data-analysis/
+### Adding geographical data
+Based on the request, we decided to search for additional informations about the location of the dataframe's observations.
 
-## 2. Request
+**Why ?**
 
-Based on the request, the team decided to search for additional information related to postal code i.e name of the city,province ...
+These information could help us to create maps, and visualize the data geographically <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> A much better way to understand the real estate situation in Belgium !
 
-From code-postaux-belge.csv which can be obtained from https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
+#### Merging with a [Postal Codes dataset](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1):
+From the file *code-postaux-belge.csv*, which can be obtained from [this link](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1), we could retrieve the following informations:
 
-We have information as follow:
-
-'column_1': postal code
-
-'column_2': city name 
-
-'column_3': longitude
-
-'column_4': lattitude	
+* **column_1** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> postal_code *int*
+* **column_2** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> city_name *str*
+* **column_3** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> longitude *float*
+* **column_4** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> lattitude *float*
 
 'coordonnees': coordinate of the city (longtitude,lattitude) 
 
