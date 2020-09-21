@@ -20,7 +20,9 @@ You need to do a complete analysis and interpretation of the dataset.
 
 Dataset were scrapped from https://www.immoweb.be
 
-Raw dataset : dataset_house_apartment.csv were obtained from challenge_collecting_data project (credit to https://github.com/MDropsy/challenge-collecting-data)
+Raw dataset : dataset_house_apartment.csv were obtained from challenge_collecting_data project 
+
+(credit to https://github.com/MDropsy/challenge-collecting-data)
 
 In this dataset we have 52077 rows and 20 columns.
 
@@ -28,11 +30,11 @@ In this dataset we have 52077 rows and 20 columns.
 
 - locality (postal code of city)
 - type_of_property (House/apartment)
-- subtype_of_property (Bungalow, Chalet, Mansion, ...)
+- subtype_of_property (Bungalow, Villa, ...)
 - price (€)
 - type_of_sale (Exclusion of life sales)
-- number_of_rooms
-- house_area
+- number_of_rooms (number)
+- house_area (m2)
 - fully_equipped_kitchen (Yes/No)
 - furnished (Yes/No)
 - open_fire (Yes/No)
@@ -42,18 +44,38 @@ In this dataset we have 52077 rows and 20 columns.
 - garden_area (m2)
 - surface_of_the_land (m2)
 - surface_of_the_plot_of_land (m2)
-- number_of_facadess
+- number_of_facadess (number)
 - swimming_pool (Yes/No)
-- state_of_the_building (New, to be renovated, ...)
+- state_of_the_building (Good, As new,to be renovated, ...)
 - construction_year (year of the property built)
-
-
-code-postaux-belge.csv
-(2757, 6)
 
 ## Plan:
 
-### Data Cleaning
+1. Create the repository (Adam)
+2. Study the request (Adam,Joffery,Mathieu)
+3. Identify technical challenges (Adam,Joffery,Mathieu)
+4. Data Cleaning (Adam,Joffery,Mathieu)
+5. Data Visualisation (Adam,Joffery,Mathieu)
+6. Data Analysis (Adam,Joffery,Mathieu)
+7. Data Interpretation (Adam,Joffery,Mathieu)
+8. Update repository (Adam,Joffery,Mathieu)
+
+### 1. Repository 
+
+https://github.com/kaiyungtan/challenge-data-analysis/
+
+### 2. Request
+
+Based on the request
+
+
+To 
+From https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
+code-postaux-belge.csv
+(2757, 6)
+
+
+### 4. Data Cleaning
 1. Understand the requirements.
 2. Identify the needs:
   - Dataset with postal code and cities.
@@ -114,7 +136,7 @@ Postal codes correspondence to Region/Province
 
 
 
-### Data Analysis
+## 5. Data Analysis
 
 #### Which variable is the target ?
 The price.
@@ -131,7 +153,7 @@ Why: City Name, Lattitude, Longitude, Province, Region
 
 
 
-### Data interpretation
+## 6. Data Interpretation 
 
 - to create new column price/house area to answer price per square meter for the following questions.
 
