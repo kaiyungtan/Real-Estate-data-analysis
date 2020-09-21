@@ -1,186 +1,251 @@
 # Challenge: Data Analysis
-Use pandas, Data visualisation libraries(Matplotlib or Seaborn) to establish conclusions about a dataset.
+Using pandas and data visualisation libraries (Matplotlib, Seaborn), let's establish conclusions about a dataset.
 
 ### Team member:  
 
-Kai Yung (Adam) https://github.com/kaiyungtan
-
-Joffrey https://github.com/Joffreybvn
-
-Mathieu https://github.com/leersmathieu
+Kai Yung (Adam) <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/kaiyungtan<br>
+Joffrey Bienvenu <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/Joffreybvn<br>
+Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/leersmathieu
 
 
 ![alt text](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true)
 
-## Introduction
+## Challenge's summary
+**The mission is**: Cleaning and doing a complete analysis and interpretation of the dataset created during the previous challenge. In order to create a machine learning model to predict prices on Belgium's real estate's sales.
 
-The real estate company "ImmoEliza" wants you to create a machine learning model to predict prices on Belgium's sales.
+### Objectives:
+ - Using Pandas for data manipulation.
+ - Using MatplotLib and/or Seaborn for plotting.
+ - Finding and understanding correlations bewteen dataset's variables.
 
-You need to do a complete analysis and interpretation of the dataset.
+## The dataset: a 50.000 entries' one !
 
-Dataset were scrapped from https://www.immoweb.be
+To complete this challenge, we used **a Dataset of 50.000 real estate's observations**, previously scrapped by [Kay Yung]( https://github.com/kaiyungtan) and its team during a previous challenge.
 
-Raw dataset : dataset_house_apartment.csv were obtained https://github.com/MDropsy/challenge-collecting-data
+To get geographical informations about our data, we merged this dataset with the [Postal Codes dataset from belgium.be](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1) and later, witht the [Belgium Municipalities GeoJSON](https://hub.arcgis.com/datasets/esribeluxdata::belgium-municipalities-1) provided by ArcGis.
 
-In this dataset we have 52077 rows and 20 columns.
+### Why this dataset ?
+We choose to use this dataset because:
 
-### Details of the columns
+*   **It has a lot of entries**: And they are not totally clean ! One of the key exercice of this challenge, was to be able to work with uncomplete/corrupted data. And at the same time, having the maximum amount of data to discover interesting correlations, and have a meaningfull analyse.
 
-- locality (postal code of city)
-- type_of_property (House/apartment)
-- subtype_of_property (Bungalow, Villa, ...)
-- price (€)
-- type_of_sale (Exclusion of life sales)
-- number_of_rooms (number)
-- house_area (m2)
-- fully_equipped_kitchen (Yes/No)
-- furnished (Yes/No)
-- open_fire (Yes/No)
-- terrace (Yes/No) 
-- terrace_area (m2)
-- garden (Yes/No)
-- garden_area (m2)
-- surface_of_the_land (m2)
-- surface_of_the_plot_of_land (m2)
-- number_of_facadess (number)
-- swimming_pool (Yes/No)
-- state_of_the_building (Good, As new,to be renovated, ...)
-- construction_year (year of the property built)
+*   **It was scrapped from ImmoWeb**: [Immoweb](https://www.immoweb.be/fr) is probably the biggest real estate website of Belgium. It has more detailed data than [Zimmo](https://www.zimmo.be/fr/), for example.
 
-## Plan:
+*   **It was scrapped by colleagues**: The dataset "*dataset_house_apartment.csv*" was scrapped by a Becode colleague and can be found on [this repository](https://github.com/MDropsy/challenge-collecting-data).
 
-1. Create the repository (Adam)
-2. Study the request (Adam,Joffery,Mathieu)
-3. Identify technical challenges (Adam,Joffery,Mathieu)
-4. Data Cleaning (Adam,Joffery,Mathieu)
-5. Data Visualisation (Adam,Joffery,Mathieu)
-6. Data Analysis (Adam,Joffery,Mathieu)
-7. Data Interpretation (Adam,Joffery,Mathieu)
-8. Update repository (Adam,Joffery,Mathieu)
+In this dataset we have **52077 rows** and **20 columns**.
 
-## 1. Repository 
+### CSV architecture
 
-https://github.com/kaiyungtan/challenge-data-analysis/
-
-## 2. Request
-
-Based on the request, the team decided to search for additional information related to postal code i.e name of the city,province ...
-
-From code-postaux-belge.csv which can be obtained from https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1
-
-We have information as follow:
-
-'column_1': postal code
-
-'column_2': city name 
-
-'column_3': longitude
-
-'column_4': lattitude	
-
-'coordonnees': coordinate of the city (longtitude,lattitude) 
-
-'geom' : empty column
-
-- code-postaux-belge.csv will be merge with dataset_house_apartment.csv to have the final raw dataset.
-- only column 1-4 from code-postaux-belge.csv will be merge.
-
-In addition, the team has to find out postal codes with their associated provinces and regions.
-
-## 3. Technical challenges
-
-To find all postal codes with their associated provinces and regions:
-
- - A function convert_by_postal_code() created to map related postal code to their associated provinces and regions. (credit to Joffrey)
-
-To create maps with interesting information:
-
- - Visualize data on a Leaflet map via folium.
- - Folium builds on the data wrangling strengths of the Python ecosystem and the mapping strengths of the leaflet.js library. 
-
-#### Postal codes correspondence to Region/Province
-
-1000–1299 : Région de Bruxelles-Capitale
-
-1300–1499 :  Province du Brabant wallon
-
-1500–1999 :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
-
-2000–2999 :  Province d'Anvers
-
-3000–3499 :  Province du Brabant flamand (arrondissement de Louvain, plus Overijse)
-
-3500–3999 :  Province de Limbourg
-
-4000–4999 :  Province de Liège
-
-5000–5999 : Province de Namur
-
-6000–6599 :  Province de Hainaut (1)
-
-6600–6999 :  Province de Luxembourg
-
-7000–7999 :  Province de Hainaut (2)
-
-8000–8999 :  Province de Flandre-Occidentale
-
-9000–9999 :  Province de Flandre-Orientale
-
-## 4. Data Cleaning
-
-1. Understand the requirements.
-
-2. Identify the needs:
-
-  - Dataset with postal code and cities.
-  - Research on data visualization library.
-  - A new price/m3 column.
-  - Average, median price, and per m3.
-  
-3. Carefully remove the outliers (error, incorrect or absurd).
+<details>
+  <summary>Show the CSV architecture</summary>
  
+- **locality** *str*: Postal code of city.
+- **type_of_property** *str*: House or Apartment.
+- **subtype_of_property** *str*: Bungalow, Villa, ...
+- **price** *float*: Price (€) of the property.
+- **type_of_sale** *str* The type of sale.
+- **number_of_rooms** *int*: The number of rooms of the property.
+- **house_area** *int*: The area (m2) of the house (floors).
+- **fully_equipped_kitchen** *bool*: If the house has a fully equipped kitchen or not.
+- **furnished** *bool*: If the house is furnished or not.
+- **open_fire***bool*: If there's an open fire or not.
+- **terrace** *bool*: If there's a terrace or not.
+- **terrace_area** *float*: The area (m2) of the terrace.
+- **garden** *bool*: If there's a garden or not.
+- **garden_area** *float*: The area (m2) of the garden.
+- **surface_of_the_land** *float*: The area (m2) of the land.
+- **surface_of_the_plot_of_land** *float*: The area (m2) of the land's plot.
+- **number_of_facadess** *int*: The number of facades (0 to 4).
+- **swimming_pool** *bool*: If there's a swimming pool or not.
+- **state_of_the_building** *str*: Good, As new, To be renovated, ...
+- **construction_year** *int*: The property built's year.
+  
+</details>
 
-Cleaning:
-- Drop the duplicated rows
-- Move columns (city_name)
-- Drop columns with unique value
-- Check each columns's properties
-- Include provinces
-- Include regions
-- Reset index
+# The Challenge
 
-- subtype: supprimer appartement block, puis supprimer subtype
-- room number: delete +20
-- price: float ? -> to int
-- house surface : delete 1, 31700
-- terrace_area: delete
-- garden_area: delete
-- surface: garder et supprimer au moment du calcul
-- facade: remove 1
-- state of building: None to unknown
+## 1. Request study & technical challenge
+Our goal is to clean and do a complete analysis and interpretation of the dataset. As we are manipulating real estate data, we decided to add geographical data to our dataset.
 
+### Adding geographical data
+Based on the request, we decided to search for additional informations about the location of the dataframe's observations.
 
+#### Why ?
+1. These information could help us to create maps, and visualize the data geographically with [Folium](https://pypi.org/project/folium/)<br><img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> A much better way to understand the real estate situation in Belgium !
 
-## 5. Data Visualisation
+2. We used [Folium](https://pypi.org/project/folium/) because it allow to visualize data on a Leaflet map easily.<br><img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Folium is build on the data wrangling strengths of the Python ecosystem and the mapping strengths of the leaflet.js library. A very powerfull tool !
 
+### Merging with a [Postal Codes dataset](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1):
+From the file *code-postaux-belge.csv*, which can be obtained from [this link](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1), we retrieved the following informations:
 
-## 6. Data Analysis
+* **column_1** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> postal_code *int*
+* **column_2** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> city_name *str*
+* **column_3** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> longitude *float*
+* **column_4** <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> lattitude *float*
 
-#### Which variable is the target ?
-The price.
-Why ? Our mission is to to create a machine learning model to predict prices on Belgium's sales.
+We dropped the other columns of this dataset (to keep only 4), as they were useless.
 
-#### How many rows and columns ?
-We have 40395 rows (observations)
-And 18 columns
+### Adding the Provinces and Regions
+We also needed to associate the postal code with their provinces and regions. They were no dataset with these informations. So we created it from [this wikipedia page](https://fr.wikipedia.org/wiki/Provinces_de_Belgique).
 
-Why: City Name, Lattitude, Longitude, Province, Region
-
-#### What is the correlation between variable/target ? (Why?)
+<details>
+  <summary>Postal codes correspondence to Region/Province</summary>
 
 
+* **1000–1299** :  Région de Bruxelles-Capitale
+* **1300–1499** :  Province du Brabant wallon
+* **1500–1999** :  Province du Brabant flamand (arrondissement de Hal-Vilvorde, sauf Overijse)
+* **2000–2999** :  Province d'Anvers
+* **3000–3499** :  Province du Brabant flamand (arrondissement de Louvain, plus Overijse)
+* **3500–3999** :  Province de Limbourg
+* **4000–4999** :  Province de Liège
+* **5000–5999** :  Province de Namur
+* **6000–6599** :  Province de Hainaut (1)
+* **6600–6999** :  Province de Luxembourg
+* **7000–7999** :  Province de Hainaut (2)
+* **8000–8999** :  Province de Flandre-Occidentale
+* **9000–9999** :  Province de Flandre-Orientale
+</details>
+
+A function "*convert_by_postal_code()*" was created to map related postal code to their associated provinces and regions. You can see it in the [Step 1-Cleaning notebook](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step1_cleaning.ipynb) or below:
+
+<details>
+  <summary>Expand this function</summary>
+ 
+```Python
+
+provinces = {
+    'Bruxelles-Capitale': {
+        'range': [(1000, 1299)],
+        'region': 'Bruxelles'
+    },
+    'Brabant wallon': {
+        'range': [(1300, 1499)],
+        'region': 'Wallonie'
+    },
+    'Brabant flamand': {
+        'range': [(1500, 1999), (3000, 3499)],
+        'region': 'Flandre'
+    },
+    'Anvers': {
+        'range': [(2000, 2999)],
+        'region': 'Flandre'
+    },
+    'Limbourg': {
+        'range': [(3500, 3999)],
+        'region': 'Flandre'
+    },
+    'Liège': {
+        'range': [(4000, 4999)],
+        'region': 'Wallonie'
+    },
+    'Namur': {
+        'range': [(5000, 5999)],
+        'region': 'Wallonie'
+    },
+    'Hainaut': {
+        'range': [(6000, 6599), (7000, 7999)],
+        'region': 'Wallonie'
+    },
+    'Luxembourg': {
+        'range': [(6600, 6999)],
+        'region': 'Wallonie'
+    },
+    'Flandre-Occidentale': {
+        'range': [(8000, 8999)],
+        'region': 'Flandre'
+    },
+    'Flandre-Orientale': {
+        'range': [(9000, 9999)],
+        'region': 'Flandre'
+    }
+}
+
+def convert_by_postal_code():
+  """
+  Convert the 'provinces' dictionnary to a dictionnary of postal codes as key,
+  and its region and province as values.
+  """
+  postal_dict = {}
+
+  # Loop through each entry in the "provinces" dictionnary
+  for province, content in provinces.items():
+
+    # Loop though each postal code
+    for postal_code_tuple in content['range']:
+      for code in range(postal_code_tuple[0], postal_code_tuple[1] + 1):
+
+        # Append the province and region for each postal code.
+        postal_dict[code] = {'province': province, 'region': content['region']}
+
+  return postal_dict
+
+postal_dict = convert_by_postal_code()
+
+# Then, the result is merged with our dataframe.
+# Get the details on: https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step1_cleaning.ipynb
+```
+</details>
 
 
+## 2. Data Cleaning
+The cleaning phase is very important: without a good cleaning, our analysis could be badly influenced by outliers. So, we decided to identify our neer during the analysis phase, to drop the useless column and clean the usefull ones.
+
+### Identifing the needs:
+To proceed to the analysis, we needed a clean dataset containing at least:
+
+  - Prices, postal code and city names.
+  - A price/m2 column
+  
+### Removing the outliers (error, incorrect or absurd).
+It's good to have a lot of columns, as it can create more correlations between them. However, it's bad to have columns with errors, incorrect, missing or absurd values. That's why **we divided our cleaning in two phases**:
+
+#### Cleaning the raw:
+A very first clean to the raw data. We were focused on "**dropping the big lies**":
+
+- **Dropping** the duplicated rows
+- **Droping** columns with unique value
+- **Checking** each columns's properties
+
+#### Refining the values
+Some tweaks were made on the dataset to **remove outliers and useless columns**, due to their high rate of *None* value. This steap required deeper investigation intop the data:
+
+- **Dropping** "*terrace_area*" column
+- **Dropping** "*garden_area*" column
+- **Dropping** "*subtype*" column
+- **Removing** the "Apartment blocks" entries
+- **Changing** *None* to "unknow"
+
+We also refactored all *float* to *int*. At the end of the cleaning, **we merged our dataframe with the two other ones created during the request study**.
+
+### How many rows and columns ?
+At the end of the cleaning phase, we had **40.395 rows** (observations) and **18 columns**. We also made a [Pandas Profiling Report](https://kaiyungtan.github.io/challenge-data-analysis/data/clean/report.html) to prove the clea
+
+
+## 3. Data Analysis & Interpretation
+This is where the fun start ! :partying_face: 
+
+> Two people know more than one.
+
+To get the most out of our data, and to allow each of us to get experience manipulating Pandas and Seaborn, we decided to work separately. Later we reviewed our work and merged here the results.
+
+### Our target: The Price.
+The price is obviously the target of this challenge, as ou goal is to to create a machine learning model to predict prices on Belgium's sales.
+
+#### Correlation between variables ?
+To identify the correlation, we used this heatmap:
+
+![https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Heatmap.png)
+
+##### Observations:
+1. The **Price** is mainly correlated with the *Number of rooms* and the *House area*.
+2. The **Number of rooms** and *House area* seems mainly correlated with each other.
+3. The **Type of property** is the variables which has the most correlation with other variables.
+
+
+
+Based on theses observations, we investigated the correlations between them.
 ## 7. Data Interpretation 
 
 - to create new column price/house area to answer price per square meter for the following questions.
@@ -196,6 +261,42 @@ Why: City Name, Lattitude, Longitude, Province, Region
 #### What are the less expensive municipalities in Wallonia? (Average price, median price, price per square meter)
 
 #### What are the less expensive municipalities in Flanders? (Average price, median price, price per square meter)
+
+
+#### The most & less expensive municipalities for apartments:
+
+| Brussels | Average price  | median | price/sqm |
+|--------|--------|-------|-------|
+| Auderghem | 429326 | 392500 | 4191 |
+| Molenbeek-Saint-Jean| 234724| 219000  | 2288 |
+ 
+| Wallonie | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| La Hulpe | 346000 | 332500 | 3898|
+| Villers-Sur-Semois | 14500| 14500  | 517 |
+ 
+| Flanders | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| Knokke | 550494 | 515000 |  6363 |
+| Kermt | 229500 | 229500 | 1213 |
+
+#### The most & less expensive municipalities for houses:
+
+| Brussels | Average price  | median | price/sqm |
+|--------|--------|-------|-------|
+| Watermael-Boitsfort | 637965 | 595000 | 3426 |
+| Koekelberg | 377500 | 330000 | 1725 |
+ 
+| Wallonie | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| Louvain-La-Neuve | 595200 | 580000 |  3159|
+| Beauwelz | 70000 | 70000  | 350 |
+ 
+| Flanders | Average price  | median| price/sqm |
+|--------|--------|-------|-------|
+| Boutersem | 443245 | 360000 |  3750 |
+| Bossuit | 220000 | 220000 | 698 |
+
 
 
 ## Pandas profiling report:
