@@ -299,6 +299,7 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 ### What are the most expensive municipalities in Wallonia? 
 (Average price, median price, price per square meter)
+
 The following was calculated based on the average price/m2:
 
 Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -309,6 +310,7 @@ Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ### What are the most expensive municipalities in Flanders? 
 (Average price, median price, price per square meter)
+
 The following was calculated based on the average price/m2:
 
 Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -319,6 +321,7 @@ Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ### What are the less expensive municipalities in Belgium? 
 (Average price, median price, price per square meter)
+
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -330,6 +333,7 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 ### What are the less expensive municipalities in Wallonia? 
 (Average price, median price, price per square meter)
+
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -340,6 +344,7 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 
 ### What are the less expensive municipalities in Flanders? 
 (Average price, median price, price per square meter)
+
 The following was calculated based on the average price/m2:
 
 Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
