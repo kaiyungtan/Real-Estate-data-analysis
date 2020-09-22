@@ -45,7 +45,7 @@ We choose to use this dataset because:
 
 *   **It was scrapped by colleagues**: The dataset "*dataset_house_apartment.csv*" was scrapped by a Becode colleague and can be found on [this repository](https://github.com/MDropsy/challenge-collecting-data).
 
-In this dataset we have **52077 rows** and **20 columns**.
+In this dataset we have **52.077 rows** and **20 columns**.
 
 ### CSV architecture
 
@@ -232,8 +232,9 @@ Some tweaks were made on the dataset to **remove outliers and useless columns**,
 - **Dropping** "*garden_area*" column<br>
 <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> It has more than 50% of None.
 - **Dropping** "*subtype*" column<br>
-<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Lots of property subtype
-- **Removing** the "Apartment blocks" entries
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Lots of property subtype. Some with less than 100 entries, in a dataset of 50.000. This column was not relevant.
+- **Removing** the "Apartment blocks" entries<br>
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Apartment blocks are a whole building. It's not the kind of real estate sales we want here.
 - **Changing** *None* to "unknow"
 
 We also refactored all *float* to *int*. At the end of the cleaning, **we merged our dataframe with the two other ones created during the request study**.
@@ -245,9 +246,9 @@ At the end of the cleaning phase, we had **40.395 rows** (observations) and **18
 ## 3. Data Analysis & Interpretation
 This is where the fun start ! :partying_face: 
 
-> Two people know more than one.
+> Three people know more than one.
 
-To get the most out of our data, and to allow each of us to get experience manipulating Pandas and Seaborn, we decided to work separately. Later we reviewed our work and merged here the results.
+To get the most out of our data, and to allow each of us to get experience manipulating Pandas and Seaborn, we decided to work separately. Later we reviewed our work and merged the results.
 
 ### Our target: The Price.
 The price is obviously the target of this challenge, as ou goal is to to create a machine learning model to predict prices on Belgium's sales.
@@ -262,15 +263,33 @@ To identify the correlation, we used this heatmap:
 2. The **Number of rooms** and *House area* seems mainly correlated with each other.
 3. The **Type of property** is the variables which has the most correlation with other variables.
 
-### Price map
+They are many other observations we did and we investigated. These are detailed in the [step 2 notebooks](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_adam.ipynb) [of each](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_joffrey.ipynb) [of us]().
 
+### Conclusions:
+Based on theses observations, we came to the following conclusion:
 
-Based on theses observations, we investigated the correlations between them.
-## 7. Data Interpretation 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kaiyungtan/challenge-data-analysis/master/Visualisation/correlations.svg">
+</p>
+
+The **Open fire**, the **Garden**, the **Location** of the house (municipality) and its **Number of facades** determine the **Type of property**.
+Which influence greatly on the **Number of rooms** and the **House area**: An apartement will have less space and less rooms than a house.
+
+**Number of rooms** and **house area** are two variables based on the size of the property. And they are the main influence on the **Price**: A larger house/apartment is more expensive than a smaller house/apartment.
+
+### Challenge's answers:
+For this challenge, we had to reply to the following questions:
 
 - to create new column price/house area to answer price per square meter for the following questions.
 
 #### What are the most expensive municipalities in Belgium? (Average price, median price, price per square meter)
+The following was calculated based on the average price/m2:
+
+Belgium &nbsp; | Average price | median | price/sqm |
+|--------|--------|-------|-------|
+**Knokke** | Long explanation
+**Leuven** | Long explanation
+**Ramskapelle** | Long explanation
 
 #### What are the most expensive municipalities in Wallonia? (Average price, median price, price per square meter)
 
