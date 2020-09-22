@@ -287,7 +287,8 @@ For this challenge, we had to reply to the following questions:
 
 - to create new column price/house area to answer price per square meter for the following questions.
 
-### What are the most expensive municipalities in Belgium? (Average price, median price, price per square meter)
+### What are the most expensive municipalities in Belgium? 
+(Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -296,7 +297,8 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 **Leuven** | 365 000 | 4100 | 4700 |
 **Ramskapelle** | 356 000 | 4200 | 4400 |
 
-### What are the most expensive municipalities in Wallonia? (Average price, median price, price per square meter)
+### What are the most expensive municipalities in Wallonia? 
+(Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -305,7 +307,8 @@ Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **Thines** | 550 000 | 3400 | 3440 |
 **Ottignies** | 380 000 | 3400 | 3160 |
 
-### What are the most expensive municipalities in Flanders? (Average price, median price, price per square meter)
+### What are the most expensive municipalities in Flanders? 
+(Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -314,7 +317,8 @@ Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **Leuven** | 365 000 | 4100 | 4700 |
 **Ramskapelle** | 356 000 | 4200 | 4400 |
 
-### What are the less expensive municipalities in Belgium? (Average price, median price, price per square meter)
+### What are the less expensive municipalities in Belgium? 
+(Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -324,7 +328,8 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 **Nollevaux** | 139 000 | 420 | 420 |
 
 
-### What are the less expensive municipalities in Wallonia? (Average price, median price, price per square meter)
+### What are the less expensive municipalities in Wallonia? 
+(Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -333,7 +338,8 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 **Focant** | 80 000 | 390 | 390 |
 **Nollevaux** | 139 000 | 420 | 420 |
 
-### What are the less expensive municipalities in Flanders? (Average price, median price, price per square meter)
+### What are the less expensive municipalities in Flanders? 
+(Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
