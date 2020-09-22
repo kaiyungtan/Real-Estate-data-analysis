@@ -404,10 +404,10 @@ https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price
 
 4. We encountered a small problem about the file name due to the fact that we don't work on the same environment (Win/Ubuntu...).
 
-**Data Analysis & Interpretation**
+## Data Analysis & Interpretation
 One of the difficulties encountered with graphs, was that **if we takeall the values without filtering them a minimum, then the visualization is not very relevant**.
 
-- <details>
+<details>
   <summary>Show exemple</summary>
  
   ![Exemple](https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/hareaforprice.png)
