@@ -397,31 +397,32 @@ For houses in Belgium:
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house.html
 
 
-## 8.Difficulties encountered
+# Debriefing: Difficulties encountered
   
-**Teamwork**  
+## Teamwork 
   
-- Our first difficulty was to find a method of collaborative work adapted to our desires.  
-We chose to work via google colab pages and to gather valid cells on this github repo.
+1. The first difficulty was to **find a method of collaborative work** adapted to our desires.<br>
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> We chose to work via google colab pages and to gather valid cells on this github repo.
 
-- The second "big" difficulty was to quickly learn how to use tools such as matplotlib or seaborn (for data visualisation).
+2. The second "big" difficulty was to **quickly learn how to use tools** such as matplotlib or seaborn (for data visualisation).
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> This was solved by working on our own, and sharing our work with each other.
 
-- Another challenge has been the fair distribution of work.  
-We do not all have the same ease of understanding in statistics and programming.
+3. Another challenge has been the **fair distribution of work**.<br>
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> We do not all have the same ease of understanding in statistics and programming... So everyone was doing their best, and then we merged our result.
 
-- We encountered a small problem of name for some files due to the fact that we don't work on the same environment (Win/Ubuntu...).
+4. We encountered a small problem about the file name due to the fact that we don't work on the same environment (Win/Ubuntu...).
 
 **Data Analysis & Interpretation**
-
-- One of the difficulties encountered with graphs is that if we take ALL the values without filtering them a minimum then the visualization is not very relevant.
+One of the difficulties encountered with graphs, was that **if we takeall the values without filtering them a minimum, then the visualization is not very relevant**.
 
 - <details>
-  <summary>Show Exemple</summary>
+  <summary>Show exemple</summary>
  
   ![Exemple](Visualisation\hareaforprice.png)
   ![Exemple](Visualisation\lareaforprice.png)
 
   On the first graph all the values are taken into account while on the second, just the areas below 500m² (or 1000m² for the surface of the land) are counted.
+  The second graph is **way more clear and understandable** !
   
 </details>
 
