@@ -12,7 +12,7 @@ Joffrey Bienvenu <img src="https://raw.githubusercontent.com/Joffreybvn/challeng
 Mathieu Leers <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> https://github.com/leersmathieu
 </td>
 <td>
-<img class="fit-picture"src="https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true">
+<img src="https://github.com/kaiyungtan/challenge-data-analysis/blob/master/Visualisation/Immoweb%20house%20logo.png?raw=true">
 </td>
 </tr>
 </tbody>
@@ -227,9 +227,12 @@ A very first clean to the raw data. We were focused on "**dropping the big lies*
 #### Refining the values
 Some tweaks were made on the dataset to **remove outliers and useless columns**, due to their high rate of *None* value. This steap required deeper investigation intop the data:
 
-- **Dropping** "*terrace_area*" column
-- **Dropping** "*garden_area*" column
-- **Dropping** "*subtype*" column
+- **Dropping** "*terrace_area*" column<br>
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> It has more than 30% of None.
+- **Dropping** "*garden_area*" column<br>
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> It has more than 50% of None.
+- **Dropping** "*subtype*" column<br>
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Lots of property subtype
 - **Removing** the "Apartment blocks" entries
 - **Changing** *None* to "unknow"
 
