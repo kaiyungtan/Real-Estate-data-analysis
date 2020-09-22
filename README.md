@@ -376,26 +376,18 @@ Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 | Boutersem | 443245 | 360000 |  3750 |
 | Bossuit | 220000 | 220000 | 698 |
 
+## Some map to better understand the situation:
 
-
-## Pandas profiling report:
-
-https://kaiyungtan.github.io/challenge-data-analysis/data/clean/report.html
-
-## Average Price per Square Meter map:
-
-For both houses & apartments in Belgium:
-
+### Average price/sqm for houses & apartments in Belgium:
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house&apartment.html
 
-For apartments in Belgium:
-
+### Average price/sqm for apartments in Belgium:
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_apartment.html
 
-For houses in Belgium:
-
+### Average price/sqm for houses in Belgium:
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house.html
 
+---
 
 # Debriefing: Difficulties encountered
   
