@@ -246,9 +246,9 @@ At the end of the cleaning phase, we had **40.395 rows** (observations) and **18
 ## 3. Data Analysis & Interpretation
 This is where the fun start ! :partying_face: 
 
-> Two people know more than one.
+> Three people know more than one.
 
-To get the most out of our data, and to allow each of us to get experience manipulating Pandas and Seaborn, we decided to work separately. Later we reviewed our work and merged here the results.
+To get the most out of our data, and to allow each of us to get experience manipulating Pandas and Seaborn, we decided to work separately. Later we reviewed our work and merged the results.
 
 ### Our target: The Price.
 The price is obviously the target of this challenge, as ou goal is to to create a machine learning model to predict prices on Belgium's sales.
@@ -263,8 +263,19 @@ To identify the correlation, we used this heatmap:
 2. The **Number of rooms** and *House area* seems mainly correlated with each other.
 3. The **Type of property** is the variables which has the most correlation with other variables.
 
-### Price map
+They are many other observations we did and we investigated. These are detailed in the [step 2 notebooks](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_adam.ipynb) [of each](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_joffrey.ipynb) [of us]().
 
+#### Conclusions:
+Based on theses observations, we came to the following conclusion:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kaiyungtan/challenge-data-analysis/master/Visualisation/correlations.svg">
+</p>
+
+The **Open fire**, the **Garden**, the **Location** of the house (municipality) and its **Number of facades** determine the **Type of property**.
+Which influence greatly on the **Number of rooms** and the **House area**: An apartement will have less space and less rooms than a house.
+
+**Number of rooms** and **house area** are two variables based on the size of the property. And they are the main influence on the **Price**: A larger house/apartment is more expensive than a smaller house/apartment.
 
 Based on theses observations, we investigated the correlations between them.
 ## 7. Data Interpretation 
