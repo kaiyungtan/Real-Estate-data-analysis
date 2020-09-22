@@ -45,7 +45,7 @@ We choose to use this dataset because:
 
 *   **It was scrapped by colleagues**: The dataset "*dataset_house_apartment.csv*" was scrapped by a Becode colleague and can be found on [this repository](https://github.com/MDropsy/challenge-collecting-data).
 
-In this dataset we have **52077 rows** and **20 columns**.
+In this dataset we have **52.077 rows** and **20 columns**.
 
 ### CSV architecture
 
@@ -232,8 +232,9 @@ Some tweaks were made on the dataset to **remove outliers and useless columns**,
 - **Dropping** "*garden_area*" column<br>
 <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> It has more than 50% of None.
 - **Dropping** "*subtype*" column<br>
-<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Lots of property subtype
-- **Removing** the "Apartment blocks" entries
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Lots of property subtype. Some with less than 100 entries, in a dataset of 50.000. This column was not relevant.
+- **Removing** the "Apartment blocks" entries<br>
+<img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Apartment blocks are a whole building. It's not the kind of real estate sales we want here.
 - **Changing** *None* to "unknow"
 
 We also refactored all *float* to *int*. At the end of the cleaning, **we merged our dataframe with the two other ones created during the request study**.
