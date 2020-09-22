@@ -336,3 +336,37 @@ https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price
 For houses in Belgium:
 
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house.html
+
+
+## 8.Difficulties encountered
+  
+**Teamwork**  
+  
+- Our first difficulty was to find a method of collaborative work adapted to our desires.  
+We chose to work via google colab pages and to gather valid cells on this github repo.
+
+- The second "big" difficulty was to quickly learn how to use tools such as matplotlib or seaborn (for data visualisation).
+
+- Another challenge has been the fair distribution of work.  
+We do not all have the same ease of understanding in statistics and programming.
+
+- We encountered a small problem of name for some files due to the fact that we don't work on the same environment (Win/Ubuntu...).
+
+**Data Analysis & Interpretation**
+
+- One of the difficulties encountered with graphs is that if we take ALL the values without filtering them a minimum then the visualization is not very relevant.
+
+- <details>
+  <summary>Show Exemple</summary>
+ 
+  ![Exemple](Visualisation\hareaforprice.png)
+  ![Exemple](Visualisation\lareaforprice.png)
+
+  On the first graph all the values are taken into account while on the second, just the areas below 500m² (or 1000m² for the surface of the land) are counted.
+  
+</details>
+
+
+
+
+
