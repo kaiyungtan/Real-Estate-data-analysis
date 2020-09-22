@@ -26,9 +26,9 @@ Here is a quick introduction to our work: A map of all belgian's municipalities 
 **The mission is**: Cleaning and doing a complete analysis and interpretation of the dataset created during the previous challenge. In order to create a machine learning model to predict prices on Belgium's real estate's sales.
 
 ### Objectives:
- - Using Pandas for data manipulation.
- - Using MatplotLib and/or Seaborn for plotting.
- - Finding and understanding correlations bewteen dataset's variables.
+ - [x] Using Pandas for data manipulation.
+ - [x] Using MatplotLib and/or Seaborn for plotting.
+ - [x] Finding and understanding correlations bewteen dataset's variables.
 
 ## The dataset: a 50.000 entries' one !
 
@@ -227,6 +227,9 @@ A very first clean to the raw data. We were focused on "**dropping the big lies*
 #### Refining the values
 Some tweaks were made on the dataset to **remove outliers and useless columns**, due to their high rate of *None* value. This steap required deeper investigation intop the data:
 
+<details>
+  <summary>Show the details</summary>
+
 - **Dropping** "*terrace_area*" column<br>
 <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> It has more than 30% of None.
 - **Dropping** "*garden_area*" column<br>
@@ -236,6 +239,8 @@ Some tweaks were made on the dataset to **remove outliers and useless columns**,
 - **Removing** the "Apartment blocks" entries<br>
 <img src="https://raw.githubusercontent.com/Joffreybvn/challenge-collecting-data/master/docs/arrow.svg" width="12"> Apartment blocks are a whole building. It's not the kind of real estate sales we want here.
 - **Changing** *None* to "unknow"
+
+</details>
 
 We also refactored all *float* to *int*. At the end of the cleaning, **we merged our dataframe with the two other ones created during the request study**.
 
@@ -277,61 +282,96 @@ Which influence greatly on the **Number of rooms** and the **House area**: An ap
 
 **Number of rooms** and **house area** are two variables based on the size of the property. And they are the main influence on the **Price**: A larger house/apartment is more expensive than a smaller house/apartment.
 
-### Challenge's answers:
+## Challenge's answers:
 For this challenge, we had to reply to the following questions:
 
 - to create new column price/house area to answer price per square meter for the following questions.
 
-#### What are the most expensive municipalities in Belgium? (Average price, median price, price per square meter)
+### What are the most expensive municipalities in Belgium? (Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
-Belgium &nbsp; | Average price | median | price/sqm |
-|--------|--------|-------|-------|
-**Knokke** | Long explanation
-**Leuven** | Long explanation
-**Ramskapelle** | Long explanation
+Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
+|--------|:--------:|:-------:|:-------:|
+**Knokke** | 472 000 | 5500 | 5500 |
+**Leuven** | 365 000 | 4100 | 4700 |
+**Ramskapelle** | 356 000 | 4200 | 4400 |
 
-#### What are the most expensive municipalities in Wallonia? (Average price, median price, price per square meter)
+### What are the most expensive municipalities in Wallonia? (Average price, median price, price per square meter)
+The following was calculated based on the average price/m2:
 
-#### What are the most expensive municipalities in Flanders? (Average price, median price, price per square meter)
+Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
+|--------|:--------:|:-------:|:-------:|
+**Louvain-La-Neuve** | 465 000 | 3800 | 3750 |
+**Thines** | 550 000 | 3400 | 3440 |
+**Ottignies** | 380 000 | 3400 | 3160 |
 
-#### What are the less expensive municipalities in Belgium? (Average price, median price, price per square meter)
+### What are the most expensive municipalities in Flanders? (Average price, median price, price per square meter)
+The following was calculated based on the average price/m2:
 
-#### What are the less expensive municipalities in Wallonia? (Average price, median price, price per square meter)
+Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
+|--------|:--------:|:-------:|:-------:|
+**Knokke** | 472 000 | 5500 | 5500 |
+**Leuven** | 365 000 | 4100 | 4700 |
+**Ramskapelle** | 356 000 | 4200 | 4400 |
 
-#### What are the less expensive municipalities in Flanders? (Average price, median price, price per square meter)
+### What are the less expensive municipalities in Belgium? (Average price, median price, price per square meter)
+The following was calculated based on the average price/m2:
+
+Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
+|--------|:--------:|:-------:|:-------:|
+**Beauwelz** | 70 000 | 350 | 350 |
+**Focant** | 80 000 | 390 | 390 |
+**Nollevaux** | 139 000 | 420 | 420 |
 
 
-#### The most & less expensive municipalities for apartments:
+### What are the less expensive municipalities in Wallonia? (Average price, median price, price per square meter)
+The following was calculated based on the average price/m2:
 
-| Brussels | Average price  | median | price/sqm |
+Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
+|--------|:--------:|:-------:|:-------:|
+**Beauwelz** | 70 000 | 350 | 350 |
+**Focant** | 80 000 | 390 | 390 |
+**Nollevaux** | 139 000 | 420 | 420 |
+
+### What are the less expensive municipalities in Flanders? (Average price, median price, price per square meter)
+The following was calculated based on the average price/m2:
+
+Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
+|--------|:--------:|:-------:|:-------:|
+**Bossuit** | 220 000 | 700 | 700 |
+**Elverdinge** | 290 000 | 730 | 730 |
+**Wijtschate** | 100 000 | 830 | 830 |
+
+### The most & less expensive municipalities for apartments:
+
+Brussels (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
 |--------|--------|-------|-------|
 | Auderghem | 429326 | 392500 | 4191 |
 | Molenbeek-Saint-Jean| 234724| 219000  | 2288 |
  
-| Wallonie | Average price  | median| price/sqm |
+Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
 |--------|--------|-------|-------|
 | La Hulpe | 346000 | 332500 | 3898|
 | Villers-Sur-Semois | 14500| 14500  | 517 |
  
-| Flanders | Average price  | median| price/sqm |
+Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
 |--------|--------|-------|-------|
 | Knokke | 550494 | 515000 |  6363 |
 | Kermt | 229500 | 229500 | 1213 |
 
-#### The most & less expensive municipalities for houses:
+### The most & less expensive municipalities for houses:
 
-| Brussels | Average price  | median | price/sqm |
+Brussels (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
 |--------|--------|-------|-------|
 | Watermael-Boitsfort | 637965 | 595000 | 3426 |
 | Koekelberg | 377500 | 330000 | 1725 |
  
-| Wallonie | Average price  | median| price/sqm |
+Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
 |--------|--------|-------|-------|
 | Louvain-La-Neuve | 595200 | 580000 |  3159|
 | Beauwelz | 70000 | 70000  | 350 |
  
-| Flanders | Average price  | median| price/sqm |
+Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
 |--------|--------|-------|-------|
 | Boutersem | 443245 | 360000 |  3750 |
 | Bossuit | 220000 | 220000 | 698 |
