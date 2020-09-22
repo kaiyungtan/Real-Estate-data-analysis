@@ -265,7 +265,7 @@ To identify the correlation, we used this heatmap:
 
 They are many other observations we did and we investigated. These are detailed in the [step 2 notebooks](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_adam.ipynb) [of each](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_joffrey.ipynb) [of us]().
 
-#### Conclusions:
+### Conclusions:
 Based on theses observations, we came to the following conclusion:
 
 <p align="center">
@@ -277,12 +277,19 @@ Which influence greatly on the **Number of rooms** and the **House area**: An ap
 
 **Number of rooms** and **house area** are two variables based on the size of the property. And they are the main influence on the **Price**: A larger house/apartment is more expensive than a smaller house/apartment.
 
-Based on theses observations, we investigated the correlations between them.
-## 7. Data Interpretation 
+### Challenge's answers:
+For this challenge, we had to reply to the following questions:
 
 - to create new column price/house area to answer price per square meter for the following questions.
 
 #### What are the most expensive municipalities in Belgium? (Average price, median price, price per square meter)
+The following was calculated based on the average price/m2:
+
+Belgium &nbsp; | Average price | median | price/sqm |
+|--------|--------|-------|-------|
+**Knokke** | Long explanation
+**Leuven** | Long explanation
+**Ramskapelle** | Long explanation
 
 #### What are the most expensive municipalities in Wallonia? (Average price, median price, price per square meter)
 
