@@ -353,7 +353,7 @@ Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **Elverdinge** | 290 000 | 730 | 730 |
 **Wijtschate** | 100 000 | 830 | 830 |
 
-## We seperate apartements & houses in the dataset to get insight for the following:
+## Apartments & houses in the dataset seperated to get insight for the following:
 
 ### The most & less expensive municipalities for apartments:
 
