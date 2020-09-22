@@ -268,7 +268,7 @@ To identify the correlation, we used this heatmap:
 2. The **Number of rooms** and *House area* seems mainly correlated with each other.
 3. The **Type of property** is the variables which has the most correlation with other variables.
 
-They are many other observations we did and we investigated. These are detailed in the [step 2 notebooks](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_adam.ipynb) [of each](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_joffrey.ipynb) [of us](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/testing_matplotlib_and_more.ipynb).
+They are many other observations we did and we investigated. These are detailed in the [step 2 notebooks](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_adam.ipynb) [of each](https://github.com/kaiyungtan/challenge-data-analysis/blob/master/step2_analysis_joffrey.ipynb) [of us]().
 
 ### Conclusions:
 Based on theses observations, we came to the following conclusion:
@@ -287,7 +287,7 @@ For this challenge, we had to reply to the following questions:
 
 - to create new column price/house area to answer price per square meter for the following questions.
 
-### What are the most expensive municipalities in Belgium?
+### What are the most expensive municipalities in Belgium? (Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -296,7 +296,7 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 **Leuven** | 365 000 | 4100 | 4700 |
 **Ramskapelle** | 356 000 | 4200 | 4400 |
 
-### What are the most expensive municipalities in Wallonia?
+### What are the most expensive municipalities in Wallonia? (Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -305,7 +305,7 @@ Wallonia (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **Thines** | 550 000 | 3400 | 3440 |
 **Ottignies** | 380 000 | 3400 | 3160 |
 
-### What are the most expensive municipalities in Flanders?
+### What are the most expensive municipalities in Flanders? (Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -314,7 +314,7 @@ Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 **Leuven** | 365 000 | 4100 | 4700 |
 **Ramskapelle** | 356 000 | 4200 | 4400 |
 
-### What are the less expensive municipalities in Belgium?
+### What are the less expensive municipalities in Belgium? (Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -324,7 +324,7 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 **Nollevaux** | 139 000 | 420 | 420 |
 
 
-### What are the less expensive municipalities in Wallonia?
+### What are the less expensive municipalities in Wallonia? (Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -333,7 +333,7 @@ Belgium (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&
 **Focant** | 80 000 | 390 | 390 |
 **Nollevaux** | 139 000 | 420 | 420 |
 
-### What are the less expensive municipalities in Flanders?
+### What are the less expensive municipalities in Flanders? (Average price, median price, price per square meter)
 The following was calculated based on the average price/m2:
 
 Flanders (€)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Average price&nbsp;&nbsp; | Median/sqm&nbsp;&nbsp; | Average/sqm&nbsp;&nbsp; |
@@ -404,14 +404,14 @@ https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price
 
 4. We encountered a small problem about the file name due to the fact that we don't work on the same environment (Win/Ubuntu...).
 
-## Data Analysis & Interpretation
+**Data Analysis & Interpretation**
 One of the difficulties encountered with graphs, was that **if we takeall the values without filtering them a minimum, then the visualization is not very relevant**.
 
 - <details>
   <summary>Show exemple</summary>
  
-  ![Exemple](Visualisation\hareaforprice.png)
-  ![Exemple](Visualisation\lareaforprice.png)
+  ![Exemple](https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/hareaforprice.png)
+  ![Exemple](https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/lareaforprice.png)
 
   On the first graph all the values are taken into account while on the second, just the areas below 500m² (or 1000m² for the surface of the land) are counted.
   The second graph is **way more clear and understandable** !
