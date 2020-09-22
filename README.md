@@ -28,11 +28,11 @@ Here is a quick introduction to our work: A map of all belgian's municipalities 
 ### Objectives:
  - [x] Using Pandas for data manipulation.
  - [x] Using MatplotLib and/or Seaborn for plotting.
- - [x] Finding and understanding correlations bewteen dataset's variables.
+ - [x] Finding and understanding correlations between dataset's variables.
 
 ## The dataset: a 50.000 entries' one !
 
-To complete this challenge, we used **a Dataset of 50.000 real estate's observations**, previously scrapped by [Kay Yung]( https://github.com/kaiyungtan) and its team during a previous challenge.
+To complete this challenge, we used **a Dataset of 50.000 real estate's observations**, previously scrapped by [Kai Yung]( https://github.com/kaiyungtan) and its team during a previous challenge.
 
 To get geographical informations about our data, we merged this dataset with the [Postal Codes dataset from belgium.be](https://data.gov.be/fr/dataset/328ba4f140ba0e870dfc9c70635fe7c1840980b1) and later, witht the [Belgium Municipalities GeoJSON](https://hub.arcgis.com/datasets/esribeluxdata::belgium-municipalities-1) provided by ArcGis.
 
@@ -221,7 +221,7 @@ It's good to have a lot of columns, as it can create more correlations between t
 A very first clean to the raw data. We were focused on "**dropping the big lies**":
 
 - **Dropping** the duplicated rows
-- **Droping** columns with unique value
+- **Dropping** columns with only one unique value
 - **Checking** each columns's properties
 
 #### Refining the values
