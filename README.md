@@ -400,7 +400,7 @@ https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price
 ### Average price/sqm for houses in Belgium:
 https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price_per_sqm_belgium_house.html
 
-### Interactive map with Tableau:
+### Data Analysis & Visualisation by Tableau:
 
 [Click here to view](https://public.tableau.com/views/BelgiumRealEstate2020-ImmowebHouseApartmentforsale-Analysis/Story1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link)
 
