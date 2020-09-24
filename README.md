@@ -402,7 +402,7 @@ https://kaiyungtan.github.io/challenge-data-analysis/Visualisation/average_price
 
 ### Interactive map with Tableau:
 
-https://public.tableau.com/views/BelgiumRealEstate2020-ImmowebHouseApartmentforsale/BelgiumRealEstate2020?:language=en&:display_count=y&publish=yes&:origin=viz_share_link
+[Click here to view](https://public.tableau.com/views/BelgiumRealEstate2020-ImmowebHouseApartmentforsale-Analysis/Story1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link)
 
 # Debriefing: Difficulties encountered
   
